@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
 }
-
+:root{
+    font-size: 16px;
+}
 body{ 
     margin: 0;
     padding: 0;
@@ -126,23 +128,25 @@ body{
     color:hsl(0, 100%, 74%) ;
 }
 /* mobile designe */
-
-@media(min-width:375px){
+@media (min-width:380px) {
+    
     .container {
         width: 70vw;
         height: 100vh;
         margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        Font-size: 16px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .right-sec h1 {
+        font-size: 2rem;
+    }
+    .left-sec h3{
+        padding: 15px 20px;
+        font-size: 1.3rem;
     }
 }
 @media (max-width:375px) {
-    :root{
-        font-size: 10px;
-    }
+    
     .container {
         width: 70vw;
         height: 100vh;
