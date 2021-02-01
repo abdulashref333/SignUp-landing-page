@@ -17,7 +17,7 @@ body{
     font-family: Poppins;
 }
 
-@media (min-width:1440px){
+@media (min-width:1400px){
     .container {
         width: 70vw;
         height: 100vh;
@@ -28,23 +28,25 @@ body{
         align-items: center;
         Font-size: 16px;
     }
+    .right-sec p {
+        font-weight: 500;
+        font-size: 1em;
+        text-align: left;
+    }
+    .right-sec h1 {
+        font-size: 4em;
+        text-align: left;
+    }
+    
 }
-.right-sec {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-}
+
 .right-sec h1 {
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 0;
     margin-right: 4vw;
 }
-.right-sec p {
-    font-weight: 500;
-    font-size: 1em;
-}
+
 .left-sec {
     display: flex;
     flex-direction: column;
@@ -128,34 +130,20 @@ body{
     color:hsl(0, 100%, 74%) ;
 }
 /* mobile designe */
-@media (min-width:380px) {
+
+@media (min-width:375px) {
     
     .container {
         width: 70vw;
         height: 100vh;
         margin: 0 auto;
-        font-size: 13px;
+    }
+    .right-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-    }
-    .right-sec h1 {
-        font-size: 2rem;
-    }
-    .left-sec h3{
-        padding: 15px 20px;
-        font-size: 1.3rem;
-    }
-}
-@media (max-width:375px) {
-    
-    .container {
-        width: 70vw;
-        height: 100vh;
-        margin: 0 auto;
-        font-size: 13px;
-        text-align: center;
-    }
-    .right-sec h1 {
-        font-size: 2rem;
     }
     .left-sec h3{
         padding: 15px 20px;
