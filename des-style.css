@@ -131,7 +131,7 @@ body{
 }
 /* mobile designe */
 
-@media (min-width:375px) {
+@media (min-width:300px) {
     
     .container {
         width: 70vw;
