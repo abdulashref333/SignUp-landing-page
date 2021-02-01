@@ -16,7 +16,41 @@ body{
     Font-size: 16px;
     font-family: Poppins;
 }
-
+@media (min-width:300px) {
+    
+    .container {
+        width: 90vw;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    .left-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 4vw;
+        width: 90vw;
+        margin: auto;
+    }
+    .right-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .right-sec h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-right: 4vw;
+    }
+    .left-sec h3{
+        padding: 15px 20px;
+        font-size: 1.3rem;
+    }
+   
+}
 @media (min-width:1400px){
     .container {
         width: 70vw;
@@ -37,24 +71,14 @@ body{
         font-size: 4em;
         text-align: left;
     }
-    
+    .right-sec h1 {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 0;
+        margin-right: 4vw;
+    }
 }
 
-.right-sec h1 {
-    font-weight: 700;
-    font-size: 3rem;
-    margin-bottom: 0;
-    margin-right: 4vw;
-}
-
-.left-sec {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 4vw;
-    width: 65vw;
-}
 .left-sec h3 {
     display: block;
     width: 100%;
@@ -71,6 +95,7 @@ body{
     font-weight: 700;
 }
 .left-sec form {
+    display: block;
     width: 100%;
     background-color: whitesmoke;
     padding: 3vw;
@@ -128,25 +153,4 @@ body{
 }
 .privacy-msg span {
     color:hsl(0, 100%, 74%) ;
-}
-/* mobile designe */
-
-@media (min-width:300px) {
-    
-    .container {
-        width: 70vw;
-        height: 100vh;
-        margin: 0 auto;
-    }
-    .right-sec {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .left-sec h3{
-        padding: 15px 20px;
-        font-size: 1.3rem;
-    }
 }
